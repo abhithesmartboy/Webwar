@@ -1,0 +1,12 @@
+.abhi1{
+    background-color: orangered;
+    height: 65px;
+}
+.abhi{
+    /* box-sizing: border-box; */
+    font-size: 30px;
+    background-color: white;
+    border-radius: 100%;
+    border-top: 20px;
+    
+}
