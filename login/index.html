@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap CSS (agar use karna hai) -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="page">
+            <div class="bg-card">
+                <div class="decor d1"></div>
+                <div class="decor d2"></div>
+                <div class="decor d3"></div>
+
+                <div class="login-box">
+                    <div class="logo">
+                        <div class="logo-icon"><i class="fa-solid fa-user"></i></div>
+                        <div class="logo-text">Your logo</div>
+                    </div>
+
+                    <h1>Login</h1>
+
+                    <form action="dashboard.php" method="post">
+
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="username@gmail.com" required />
+
+                        <label>Password</label>
+                        <div class="pass-wrap">
+                            <input type="password" name="password" placeholder="Password" required />
+                            <span class="eye"><i class="fa-regular fa-eye"></i></span>
+                        </div>
+
+                        <a href="#" class="forgot">Forgot Password?</a>
+
+                        <button type="submit" name="login" class="btn">Sign in</button>
+
+                        <p class="register">
+                            Don't have an account? <a href="#">Register for free</a>
+                        </p>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (correct way) -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f6ff;
+}
+
+/* Page Center */
+.page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* Background Card */
+.bg-card {
+    width: 900px;
+    max-width: 100%;
+    min-height: 520px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+    background: linear-gradient(135deg, #1a38ff, #7b2cff);
+}
+
+/* Decoration shapes */
+.decor {
+    position: absolute;
+    border-radius: 50%;
+    opacity: .35;
+}
+
+.d1 {
+    width: 260px;
+    height: 260px;
+    background: #00ffc8;
+    top: -90px;
+    left: -90px;
+}
+
+.d2 {
+    width: 300px;
+    height: 300px;
+    background: #ffffff;
+    bottom: -120px;
+    left: 40px;
+}
+
+.d3 {
+    width: 180px;
+    height: 180px;
+    background: #ffd000;
+    top: 160px;
+    left: 220px;
+}
+
+/* Login Box */
+.login-box {
+    width: 360px;
+    max-width: 100%;
+    background: white;
+    border-radius: 20px;
+    padding: 35px 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+    z-index: 10;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: #1a38ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.logo-text {
+    font-weight: 600;
+}
+
+/* Title */
+.login-box h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    margin: 10px 0 6px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid #dcdcdc;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus {
+    border: 1px solid #1a38ff;
+}
+
+/* Password wrapper */
+.pass-wrap {
+    position: relative;
+}
+
+.eye {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+}
+
+/* Forgot */
+.forgot {
+    display: inline-block;
+    margin: 12px 0 20px;
+    font-size: 13px;
+    color: #1a38ff;
+    text-decoration: none;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 12px 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #1a38ff, #7b2cff);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: .95;
+}
+
+/* Register text */
+.register {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.register a {
+    color: #1a38ff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .bg-card {
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .d1,
+    .d2,
+    .d3 {
+        display: none;
+    }
+}
