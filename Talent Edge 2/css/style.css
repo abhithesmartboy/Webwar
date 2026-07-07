@@ -1,0 +1,1147 @@
+/* Navbar base */
+.custom-navbar {
+    position: absolute;
+    /* hero ke upar rahe */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: transparent;
+    padding-top: 3%;
+}
+
+
+/* Scroll par background */
+/* .custom-navbar.scrolled {
+    background-color: #000;
+    padding: 10px 0;
+} */
+
+/* Nav links */
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00f7eb;
+}
+
+/* Nav links ke beech gap */
+.navbar-nav .nav-item {
+    margin-left: 18px;
+}
+
+/* Button ke liye extra gap */
+.navbar-nav .nav-item:last-child {
+    margin-left: 30px;
+}
+
+.nav-cta {
+    margin-left: 200px;
+}
+
+.navbar-nav {
+    gap: 18px;
+    /* links ke beech gap */
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-left: 30px !important;
+}
+
+
+
+/* Logo aur links ke beech thoda sa gap */
+.navbar-brand {
+    margin-right: 25px;
+}
+
+/* Links ke beech spacing */
+.navbar-nav .nav-item {
+    margin-right: 18px;
+}
+
+/* Contact button thoda alag dikhe */
+.navbar-nav .nav-item:last-child {
+    margin-left: 20px;
+}
+
+
+/* Dropdown menu */
+.dropdown-menu {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+}
+
+.dropdown-item {
+    font-weight: 500;
+    padding: 8px 20px;
+}
+
+.dropdown-item:hover {
+    background-color: #3ab9af;
+    color: #000;
+}
+
+/* Dropdown arrow smooth rotate */
+.nav-item.dropdown:hover i {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+/* HERO SECTION */
+.hero-video-section {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Video */
+.hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* Content */
+.hero-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.trusted-by-section {
+    /* background: #f8f9fa; */
+    overflow: hidden;
+}
+
+/* slider window */
+.logo-slider {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* moving track */
+.logo-track {
+    display: flex;
+    /* width: max-content; */
+    animation: scroll 15s linear infinite;
+}
+
+/* logo box */
+.logo {
+    flex: 0 0 auto;
+    padding: 0 40px;
+}
+
+.logo img {
+    max-height: 40px;
+    /* filter: grayscale(100%); */
+    /* opacity: 0.7; */
+    transition: 0.3s;
+}
+
+.logo img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+/* animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Horizontal divider line */
+.section-divider {
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    margin: 20px auto;
+}
+
+
+/* ==============================
+   WHAT WE DO SECTION
+============================== */
+
+.what-we-do-section {
+    background: #ffffff;
+}
+
+/* Section heading */
+.what-we-do-section h1 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main card */
+.what-card {
+    position: relative;
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 6px;
+    padding: 120px 32px 40px;
+    /* 👈 TOP PADDING = BIG GAP */
+    background: #fff;
+}
+
+/* Top-right icon */
+.what-icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+}
+
+/* Card title */
+.what-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+/* Blue highlighted line */
+.what-card .highlight {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1b8a8f;
+    margin-bottom: 22px;
+}
+
+/* Paragraphs */
+.what-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 14px;
+}
+
+/* Last paragraph spacing fix */
+.what-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive fix */
+@media (max-width: 991px) {
+    .what-we-do-section h1 {
+        font-size: 34px;
+    }
+
+    .what-card {
+        padding: 100px 25px 35px;
+    }
+
+    .what-icon {
+        width: 44px;
+        top: 25px;
+        right: 25px;
+    }
+}
+
+/* ==============================
+   WHAT WE DO – HOVER EFFECT
+============================== */
+
+/* Card base */
+.what-card {
+    position: relative;
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 6px;
+    padding: 120px 32px 40px;
+    background: #fff;
+    transition: all 0.35s ease;
+}
+
+/* Hover effect */
+.what-card:hover {
+    transform: translateY(-8px);
+    border-color: #1b8a8f;
+}
+
+/* Icon animation */
+.what-card .what-icon {
+    transition: transform 0.35s ease;
+}
+
+.what-card:hover .what-icon {
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* Heading color change */
+.what-card h3 {
+    transition: color 0.35s ease;
+}
+
+.what-card:hover h3 {
+    color: #1b8a8f;
+}
+
+.full-image-section {
+    width: 100%;
+    height: 80vh;
+    /* website jaisa balanced height */
+    max-height: 520px;
+    min-height: 320px;
+    overflow: hidden;
+
+}
+
+.full-image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+
+/* ==============================
+   OUR EDGE SECTION
+============================== */
+
+.our-edge-section {
+    background: #ffffff;
+}
+
+/* Left big title */
+.our-edge-title {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+/* Each row item */
+.edge-item {
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Heading (teal color) */
+.edge-item h4 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #1b8a8f;
+}
+
+/* Paragraph */
+.edge-item p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .our-edge-title {
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+
+    .edge-item h4 {
+        margin-bottom: 10px;
+    }
+}
+
+/* ==============================
+   OUR EDGE – HOVER (TEXT WHITE)
+============================== */
+
+.edge-item {
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.35s ease,
+        transform 0.35s ease;
+}
+
+/* Hover state */
+.edge-item:hover {
+    background-color: #1b8a8f;
+    /* teal background */
+    transform: translateX(6px);
+}
+
+/* Heading */
+.edge-item h4 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #1b8a8f;
+    transition: color 0.35s ease;
+}
+
+/* Paragraph */
+.edge-item p {
+    color: #333;
+    transition: color 0.35s ease;
+}
+
+/* Hover par text white */
+.edge-item:hover h4,
+.edge-item:hover p {
+    color: #ffffff;
+}
+
+/* ==============================
+   RIGHT SIDE HORIZONTAL LINE
+============================== */
+
+.right-divider-section {
+    padding: 40px 0;
+}
+
+.right-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+
+/* ==============================
+   STATS SECTION (BIGGER SCALE)
+============================== */
+
+.stats-section {
+    background: #ffffff;
+    padding: 100px 0;
+}
+
+/* Heading */
+.stats-heading {
+    font-size: 56px;
+    /* 👈 bada heading */
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 80px;
+    /* 👈 zyada space niche */
+}
+
+/* Each stat item */
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 28px;
+    min-height: 260px;
+    /* 👈 vertical openness */
+}
+
+/* Vertical divider line */
+.stat-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #000;
+}
+
+/* Label */
+.stat-label {
+    font-size: 18px;
+    /* 👈 label bhi thoda bada */
+    color: #000;
+    margin-bottom: 120px;
+    /* 👈 bada gap (IMPORTANT) */
+}
+
+/* Value */
+.stat-value {
+    font-size: 64px;
+    /* 👈 BIG % numbers */
+    font-weight: 600;
+    color: #1b8a8f;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .stats-heading {
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+
+    .stat-item {
+        min-height: auto;
+        padding-left: 20px;
+        margin-bottom: 40px;
+    }
+
+    .stat-label {
+        margin-bottom: 30px;
+    }
+
+    .stat-value {
+        font-size: 48px;
+    }
+}
+
+/* ==============================
+   LEADERSHIP TEAM – IMAGE TOP, TEXT BOTTOM
+============================== */
+
+.leadership-section {
+    background: #000;
+    padding: 120px 0;
+}
+
+/* H1 Heading */
+.leadership-heading {
+    font-size: 64px;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Card */
+.leader-card {
+    background: #000;
+    height: 100%;
+    gap: 5%;
+}
+
+/* Image wrapper */
+.leader-card img {
+    width: 100%;
+    height: 460px;
+    /* 👈 image height control */
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+/* Content BELOW image */
+.leader-info {
+    padding: 28px 24px 32px;
+    background: #000;
+    color: #fff;
+}
+
+/* Name */
+.leader-info h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+/* Role */
+.leader-info span {
+    display: block;
+    font-size: 14px;
+    color: #9fd7d5;
+    margin-bottom: 16px;
+}
+
+/* Bio */
+.leader-info p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #e6e6e6;
+    margin-bottom: 0;
+}
+
+/* Subtle hover (premium) */
+.leader-card {
+    transition: transform 0.35s ease;
+}
+
+.leader-card:hover {
+    transform: translateY(-6px);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .leadership-heading {
+        font-size: 42px;
+        margin-bottom: 30px;
+    }
+
+    .leader-card img {
+        height: 300px;
+    }
+}
+
+/* Image wrapper – niche gap dene ke liye */
+.leader-card img {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    margin-bottom: 32px;
+    /* 👈 YAHI MAIN GAP HAI */
+}
+
+/* ==============================
+   TESTIMONIAL SECTION
+============================== */
+
+.testimonial-section {
+    background: radial-gradient(circle at right,
+            #2b2b2b,
+            #000000 70%);
+    padding: 140px 0;
+}
+
+/* Heading */
+.testimonial-heading {
+    font-size: 56px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+/* Testimonial Box */
+.testimonial-box {
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    padding: 60px 70px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: transparent;
+}
+
+/* Text */
+.testimonial-text {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+/* Author */
+.testimonial-author strong {
+    display: block;
+    font-size: 18px;
+    color: #1b8a8f;
+    margin-bottom: 4px;
+}
+
+.testimonial-author span {
+    font-size: 15px;
+    color: #cccccc;
+}
+
+/* Logo */
+.testimonial-logo {
+    margin-top: 30px;
+}
+
+.testimonial-logo img {
+    max-width: 70px;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .testimonial-heading {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .testimonial-box {
+        padding: 40px 30px;
+    }
+
+    .testimonial-text {
+        font-size: 16px;
+    }
+}
+
+/* ==============================
+   CONNECT WITH AN EXPERT
+============================== */
+
+.connect-section {
+    padding: 120px 0;
+    background: #ffffff;
+}
+
+/* Main card */
+.connect-card {
+    background: linear-gradient(135deg,
+            #0b3f3f,
+            #1b6f6b);
+    border-radius: 32px;
+    padding: 80px 70px;
+    color: #ffffff;
+}
+
+/* Heading */
+.connect-heading {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* Subtitle */
+.connect-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Text */
+.connect-text {
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 480px;
+    margin-bottom: 30px;
+}
+
+/* Button */
+.connect-btn {
+    background: #ffffff;
+    color: #000000;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.connect-btn:hover {
+    background: #e8f4f3;
+    color: #000000;
+}
+
+
+
+/* Responsive */
+@media (max-width: 991px) {
+    .connect-card {
+        padding: 50px 35px;
+    }
+
+    .connect-heading {
+        font-size: 36px;
+    }
+
+    .connect-image {
+        margin-top: 40px;
+        max-width: 100%;
+    }
+}
+
+/* IMAGE WRAPPER */
+.connect-image {
+    width: 100%;
+    max-width: 520px;
+    height: 420px;
+    /* 👈 YAHIN HEIGHT CONTROL HO RAHI HAI */
+    margin-left: auto;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+/* IMAGE */
+.connect-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* image safe, stretch nahi */
+    object-position: top center;
+    /* face cut nahi hoga */
+    display: block;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+.footer-section {
+    background: #000;
+    color: #fff;
+    padding-top: 100px;
+}
+
+/* Brand */
+.footer-brand {
+    font-size: 28px;
+    font-weight: 500;
+    color: #d7a24b;
+    margin-bottom: 20px;
+}
+
+/* Text */
+.footer-text {
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 320px;
+    margin-bottom: 25px;
+}
+
+/* Social icons */
+.footer-social a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d7a24b;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    color: #d7a24b;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    background: #d7a24b;
+    color: #000;
+}
+
+/* Column title */
+.footer-title {
+    font-size: 14px;
+    color: #d7a24b;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #d7a24b;
+}
+
+/* Bottom bar */
+.footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 60px;
+    padding: 25px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Bottom links */
+.footer-bottom-links a {
+    color: #ffffff;
+    margin-left: 20px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-bottom-links a:hover {
+    color: #d7a24b;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .footer-section {
+        padding-top: 60px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+
+    .footer-bottom-links {
+        margin-top: 10px;
+    }
+}
+
+/* Footer heading underline */
+.footer-title {
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+
+/* Horizontal line under each title */
+.footer-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    /* 👈 line length (same as website) */
+    height: 1px;
+    background-color: #d7a24b;
+    /* gold accent */
+}
+
+/* Footer logo */
+.footer-logo img {
+    max-width: 160px;
+    /* 👈 logo size */
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.custom-navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: transparent;
+    padding: 25px 0;
+}
+
+.navbar-logo {
+    height: 40px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+    margin-right: 22px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #1b8a8f;
+}
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+
+/* =========================
+   CONTACT HERO
+========================= */
+
+.contact-hero {
+    height: 60vh;
+    background: url("../images/TE-Contact-BG.png") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.contact-hero-content {
+    position: relative;
+    color: #fff;
+    z-index: 1;
+}
+
+.contact-hero-content h1 {
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.contact-hero-content p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 60px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.contact-details p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+/* FORM */
+.contact-form {
+    flex: 1;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #1b8a8f;
+}
+
+.contact-form button {
+    background: #1b8a8f;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background: #157b7f;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.te-footer {
+    background: #000;
+    color: #fff;
+    padding: 80px 0 0;
+}
+
+.te-footer p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer-title {
+    font-size: 14px;
+    color: #d7a24b;
+    margin-bottom: 16px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-links a:hover {
+    color: #d7a24b;
+}
+
+.social-icons a {
+    display: inline-flex;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #d7a24b;
+    align-items: center;
+    justify-content: center;
+    color: #d7a24b;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+
+.social-icons a:hover {
+    background: #d7a24b;
+    color: #000;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 50px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .contact-hero-content h1 {
+        font-size: 40px;
+    }
+
+    .custom-navbar {
+        position: relative;
+        background: #000;
+    }
+}
